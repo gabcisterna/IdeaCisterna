@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="/estilos/estilo.css">
+<head>
+    <meta charset="UTF-8">
+    <title>opciones</title>
+</head>
+<body>
+    <h1>Bienvenido al juego de cara o cruz</h1>
+    <div>
+        <button onclick="sinSaldo()">Opcion 1: Jugar (Invalida)</button>
+        <button onclick="opcion2()">Opcion 2: Ingresar más saldo</button>
+        <button onclick="opcion3()">Opcion 3: Salir</button>
+    </div>
+    <div id="mostrar"></div>
+    <script src="/caraocruzjs/caraocruz.js"></script>
+    <script>
+        function sinSaldo(){
+            let mostrar = document.getElementById("mostrar")
+            mostrar.innerHTML = `Debes ingresar otra opcion porque no tienes saldo :(`
+        }
+        function volver(){
+            window.location.href = "caraocruz.html"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/estilo.css">
+    <title>Agregar saldo</title>
+</head>
+<body>
+    <h1>Ingrese lo que quiera agregar a su saldo</h1>
+    <div>
+        <label for="sumar">Ingrese la cantidad</label>
+        <input type="text" id="sumar">
+    </div>
+    <br>
+    <div id="mostrar"></div>
+    <button id="boton">Agregar</button>
+    <button onclick="volver()">Volver</button>
+    <script src="/juegos/caraocruz/js/opcion2.js"></script>
+    <script>
+        function volver(){
+            window.location.href = "/juegos/caraocruz/index.html"
+        }
+    </script>
+</body>
+</html>

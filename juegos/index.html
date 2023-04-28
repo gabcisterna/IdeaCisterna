@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/estilojuegos.css">
+    <title>Cara o Cruz</title>
+</head>
+<body>
+    <h1>Bienvenido al Casino Online</h1>
+    <h2>Elija que quiere jugar</h2>
+    <div class= "imagenes">
+        <img src="/img/caraocruz.png" onclick="caraocruz()">
+        <p>Cara o Cruz</p>
+    </div>
+    <div class= "imagenes">
+        <img src="/img/blacjack.jpg" onclick="blackjack()">
+        <p>Blackjack</p>
+    </div>
+    <div><br><br><br></div>
+    <button onclick="cerrarsesion()">Cerrar sesion</button>
+    <script>
+        function caraocruz(){
+            window.location.href = "caraocruz/index.html"
+        }
+
+        function blackjack(){
+            window.location.href = "blackjack/index.html"
+        }
+
+        function cerrarsesion(){
+            let i = NaN
+            localStorage.setItem("id", i)
+            window.location.href = "/index.html"
+        }
+    </script>
+</body>
+</html>
